@@ -1,0 +1,8 @@
+[
+    {"can-zone-storage": [
+        "can-zone-storage.methods.getItem",
+        "can-zone-storage.methods.setItem",
+        "can-zone-storage.methods.removeItem",
+        "can-zone-storage.methods.getStore"
+    ]}
+]

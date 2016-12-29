@@ -1,0 +1,58 @@
+{
+  "name": "can-zone-storage",
+  "version": "1.0.0",
+  "description": "Implement Zone-safe memory-based storage",
+  "main": "can-zone-storage.js",
+  "scripts": {
+    "build": "node build.js",
+    "lint": "semistandard --fix",
+    "preversion": "npm test && npm run build",
+    "version": "git commit -am \"Update dist for release\" && git checkout -b release && git add -f dist/",
+    "postversion": "git push --tags && git checkout master && git branch -D release && git push",
+    "release:pre": "npm version prerelease && npm publish",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "testee": "testee test/zone-test.html --browsers firefox",
+    "test": "npm run lint && npm run testee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/canjs/can-zone-storage"
+  },
+  "keywords": [
+    "CanJS"
+  ],
+  "author": "Bitovi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/canjs/can-zone-storage/issues"
+  },
+  "homepage": "https://github.com/canjs/can-zone-storage",
+  "steal": {
+    "main": "can-zone-storage"
+  },
+  "bit-docs": {
+    "dependencies": {
+      "bit-docs-glob-finder": "^0.0.5",
+      "bit-docs-dev": "^0.0.3",
+      "bit-docs-js": "^0.0.4"
+    },
+    "glob": {
+      "pattern": "**/*.{js,md}",
+      "ignore": "node_modules/**/*"
+    },
+    "parent": "can-zone-storage",
+    "readme": {
+      "apis": "./docs/apis.json"
+    }
+  },
+  "devDependencies": {
+    "can-zone": "^0.6.1",
+    "semistandard": "^9.2.1",
+    "steal": "^1.0.6",
+    "steal-qunit": "^1.0.0",
+    "steal-tools": "^1.0.1",
+    "testee": "^0.3.0"
+  }
+}
