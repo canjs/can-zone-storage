@@ -18,6 +18,6 @@ zoneStorage.removeItem('key-name');
 
 ## Zone Safe
 
-Done-SSR, the Server Side Rendering solution built into DoneJS, uses Zones to increase performance.  Other web servers will completely rebuild the app from scratch for every incoming request.  Done-SSR uses Zones to keep the app running in memory and share it between all incoming connections.  
+Done-SSR, the Server Side Rendering solution built into DoneJS, uses Zones to increase performance.  Other web servers will completely rebuild the app from scratch for every incoming request.  Done-SSR uses Zones to keep the app running in memory and share it between all incoming connections.
 
 Sharing modules between connections is often fine, but some data should not be shared.  Private data belonging to one user should not reach another user on the same server.  Can-Zone provides each incoming request with a `CanZone.current` object that is not shared.  The `can-zone-storage` module detects if CanZone is in the global namespace.  If found, this module uses the `CanZone.current.data` object as the data store.  If `CanZone` is not found, an internal memory store is used.
