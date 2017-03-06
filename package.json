@@ -51,7 +51,7 @@
     "bit-docs": "0.0.7",
     "bit-docs-generate-readme": "0.0.10",
     "can-zone": "^0.6.1",
-    "semistandard": "^9.2.1",
+    "semistandard": "^10.0.0",
     "steal": "^1.0.6",
     "steal-qunit": "^1.0.0",
     "steal-tools": "^1.0.1",
