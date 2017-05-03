@@ -2,6 +2,8 @@
 
 # can-zone-storage
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-zone-storage.svg)](https://greenkeeper.io/)
+
 Implement a Zone-safe memory-based storage solution.  This is especially useful for creating modules that are compatible with Done-SSR (Server Side Rendering).
 
 ```js
