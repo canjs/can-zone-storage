@@ -1,23 +1,28 @@
-[![Build Status](https://travis-ci.org/canjs/can-zone-storage.svg?branch=master)](https://travis-ci.org/canjs/can-zone-storage)
-
 # can-zone-storage
+
+[![Join the chat at https://gitter.im/canjs/canjs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/canjs/canjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/canjs/can-zone-storage/blob/master/LICENSE)
+[![npm version](https://badge.fury.io/js/can-zone-storage.svg)](https://www.npmjs.com/package/can-zone-storage)
+[![Travis build status](https://travis-ci.org/canjs/can-zone-storage.svg?branch=master)](https://travis-ci.org/canjs/can-zone-storage)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/canjs/can-zone-storage?branch=master&svg=true)](https://ci.appveyor.com/project/matthewp/can-zone-storage)
+[![Coverage status](https://coveralls.io/repos/github/canjs/can-zone-storage/badge.svg?branch=master)](https://coveralls.io/github/canjs/can-zone-storage?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-zone-storage.svg)](https://greenkeeper.io/)
 
 Implement a Zone-safe memory-based storage solution.  This is especially useful for creating modules that are compatible with Done-SSR (Server Side Rendering).
 
-```js
-var zoneStorage = require("can-zone-storage");
+## Documentation
 
-var value = 'Store me';
+Read the [can-zone-storage API docs on CanJS.com](https://canjs.com/doc/can-zone-storage.html).
 
-zoneStorage.setItem('key-name', value);
+## Changelog
 
-zoneStorage.getItem('key-name') === 'Store me' // --> true
+See the [latest releases on GitHub](https://github.com/canjs/can-zone-storage/releases).
 
-zoneStorage.removeItem('key-name');
-```
+## Contributing
 
-## Zone Safe
+The [contribution guide](https://github.com/canjs/can-zone-storage/blob/master/CONTRIBUTING.md) has information on getting help, reporting bugs, developing locally, and more.
 
-Done-SSR, the Server Side Rendering solution built into DoneJS, uses Zones to increase performance.  Other web servers will completely rebuild the app from scratch for every incoming request.  Done-SSR uses Zones to keep the app running in memory and share it between all incoming connections.
+## License
 
-Sharing modules between connections is often fine, but some data should not be shared.  Private data belonging to one user should not reach another user on the same server.  Can-Zone provides each incoming request with a `CanZone.current` object that is not shared.  The `can-zone-storage` module detects if CanZone is in the global namespace.  If found, this module uses the `CanZone.current.data` object as the data store.  If `CanZone` is not found, an internal memory store is used.
+[MIT](https://github.com/canjs/can-zone-storage/blob/master/LICENSE)
+
