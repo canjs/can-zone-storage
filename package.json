@@ -48,7 +48,7 @@
     }
   },
   "devDependencies": {
-    "bit-docs": "0.0.7",
+    "bit-docs": "0.0.8-0",
     "bit-docs-generate-readme": "0.0.10",
     "can-zone": "^0.6.1",
     "semistandard": "^9.2.1",
