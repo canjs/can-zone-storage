@@ -14,7 +14,8 @@
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
     "testee": "testee test/zone-test.html --browsers firefox",
-    "test": "npm run lint && npm run testee"
+    "test": "npm run detect-cycle && npm run lint && npm run testee",
+    "detect-cycle": "detect-cyclic-packages --ignore done-serve"
   },
   "repository": {
     "type": "git",
@@ -51,6 +52,7 @@
     "bit-docs": "0.0.7",
     "bit-docs-generate-readme": "0.0.10",
     "can-zone": "^0.6.1",
+    "detect-cyclic-packages": "^1.1.0",
     "semistandard": "^9.2.1",
     "steal": "^1.0.6",
     "steal-qunit": "^1.0.0",
