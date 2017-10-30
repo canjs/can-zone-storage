@@ -1,5 +1,6 @@
 @module {Object} can-zone-storage
-@parent can-ecosystem
+@parent can-js-utilities
+@collection can-ecosystem
 @description Implement Zone-safe memory-based storage
 @group can-zone-storage.methods 0 methods
 @group can-zone-storage.properties 1 properties
