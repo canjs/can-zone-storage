@@ -5,8 +5,8 @@
 
 Removes keyed data from the current data store.
 
-```js
-var zoneStorage = require("can-zone-storage");
+```javascript
+import zoneStorage from "can-zone-storage";
 
 zoneStorage.removeItem('key-name');
 ```

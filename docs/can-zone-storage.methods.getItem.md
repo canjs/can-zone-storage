@@ -5,12 +5,12 @@
 
 Stores keyed data in the current data store.
 
-```js
-var zoneStorage = require("can-zone-storage");
+```javascript
+import zoneStorage from "can-zone-storage";
 
-var test = zoneStorage.getItem('key-name') // test === undefined
+const test = zoneStorage.getItem('key-name'); // test === undefined
 
-var value = 'Store me';
+const value = 'Store me';
 
 zoneStorage.setItem('key-name', value);
 zoneStorage.getItem('key-name') // test === 'Store me'
