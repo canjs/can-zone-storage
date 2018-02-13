@@ -5,7 +5,7 @@
 
 Stores keyed data in the current data store.
 
-```javascript
+```js
 import zoneStorage from "can-zone-storage";
 
 const test = zoneStorage.getItem('key-name'); // test === undefined

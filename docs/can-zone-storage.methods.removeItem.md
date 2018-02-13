@@ -5,7 +5,7 @@
 
 Removes keyed data from the current data store.
 
-```javascript
+```js
 import zoneStorage from "can-zone-storage";
 
 zoneStorage.removeItem('key-name');

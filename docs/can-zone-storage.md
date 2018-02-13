@@ -10,7 +10,7 @@
 
 Implement a Zone-safe memory-based storage solution.  This is especially useful for Server Side Rendering (SSR).
 
-```javascript
+```js
 import zoneStorage from "can-zone-storage";
 
 const value = 'Store me';
