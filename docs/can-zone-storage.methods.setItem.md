@@ -8,9 +8,9 @@ Stores keyed data in the current data store.
 ```js
 import zoneStorage from "can-zone-storage";
 
-const value = 'Store me';
+const value = "Store me";
 
-zoneStorage.setItem('key-name', value);
+zoneStorage.setItem( "key-name", value );
 ```
 
 @param {String} key The key name under which the data will be stored.

@@ -8,12 +8,12 @@ Stores keyed data in the current data store.
 ```js
 import zoneStorage from "can-zone-storage";
 
-const test = zoneStorage.getItem('key-name'); // test === undefined
+const test = zoneStorage.getItem( "key-name" ); // test === undefined
 
-const value = 'Store me';
+const value = "Store me";
 
-zoneStorage.setItem('key-name', value);
-zoneStorage.getItem('key-name') // test === 'Store me'
+zoneStorage.setItem( "key-name", value );
+zoneStorage.getItem( "key-name" ); // test === 'Store me'
 
 ```
 

@@ -9,9 +9,9 @@ The `data` property of `can-zone-storage` is a plain old JavaScript object.  It 
 ```js
 import zoneStorage from "can-zone-storage";
 
-console.log(zoneStorage.data) // --> {}
+console.log( zoneStorage.data ); // --> {}
 
-zoneStorage.setItem('test', 123);
+zoneStorage.setItem( "test", 123 );
 
-console.log(zoneStorage.data) // --> {test: 123}
+console.log( zoneStorage.data ); // --> {test: 123}
 ```

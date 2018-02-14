@@ -12,7 +12,7 @@ import zoneStorage from "can-zone-storage";
 import Zone from "can-zone";
 const store = zoneStorage.getStore();
 
-store === window.CanZone.current.data // true
+store === window.CanZone.current.data; // true
 ```
 
 If the [can-zone] library has NOT been imported, `getStore` returns the internal [can-zone-storage.data] object.
@@ -21,5 +21,5 @@ If the [can-zone] library has NOT been imported, `getStore` returns the internal
 import zoneStorage from "can-zone-storage";
 const store = zoneStorage.getStore();
 
-store === zoneStorage.data // true
+store === zoneStorage.data; // true
 ```
