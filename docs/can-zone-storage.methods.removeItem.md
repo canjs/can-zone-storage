@@ -6,9 +6,9 @@
 Removes keyed data from the current data store.
 
 ```js
-var zoneStorage = require("can-zone-storage");
+import zoneStorage from "can-zone-storage";
 
-zoneStorage.removeItem('key-name');
+zoneStorage.removeItem( "key-name" );
 ```
 
 @param {String} key The key name that will be deleted from the data store.

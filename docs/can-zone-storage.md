@@ -11,15 +11,15 @@
 Implement a Zone-safe memory-based storage solution.  This is especially useful for Server Side Rendering (SSR).
 
 ```js
-var zoneStorage = require("can-zone-storage");
+import zoneStorage from "can-zone-storage";
 
-var value = 'Store me';
+const value = "Store me";
 
-zoneStorage.setItem('key-name', value);
+zoneStorage.setItem( "key-name", value );
 
-zoneStorage.getItem('key-name') === 'Store me' // --> true
+zoneStorage.getItem( "key-name" ) === "Store me"; // --> true
 
-zoneStorage.removeItem('key-name');
+zoneStorage.removeItem( "key-name" );
 ```
 
 @body

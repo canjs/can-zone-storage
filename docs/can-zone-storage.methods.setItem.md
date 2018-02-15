@@ -6,11 +6,11 @@
 Stores keyed data in the current data store.
 
 ```js
-var zoneStorage = require("can-zone-storage");
+import zoneStorage from "can-zone-storage";
 
-var value = 'Store me';
+const value = "Store me";
 
-zoneStorage.setItem('key-name', value);
+zoneStorage.setItem( "key-name", value );
 ```
 
 @param {String} key The key name under which the data will be stored.
