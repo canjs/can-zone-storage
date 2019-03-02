@@ -5,8 +5,6 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/canjs/can-zone-storage/blob/master/LICENSE)
 [![npm version](https://badge.fury.io/js/can-zone-storage.svg)](https://www.npmjs.com/package/can-zone-storage)
 [![Travis build status](https://travis-ci.org/canjs/can-zone-storage.svg?branch=master)](https://travis-ci.org/canjs/can-zone-storage)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/canjs/can-zone-storage?branch=master&svg=true)](https://ci.appveyor.com/project/matthewp/can-zone-storage)
-[![Coverage status](https://coveralls.io/repos/github/canjs/can-zone-storage/badge.svg?branch=master)](https://coveralls.io/github/canjs/can-zone-storage?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-zone-storage.svg)](https://greenkeeper.io/)
 
 Implement a Zone-safe memory-based storage solution.  This is especially useful for creating modules that are compatible with Done-SSR (Server Side Rendering).
