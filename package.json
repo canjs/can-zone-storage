@@ -49,14 +49,14 @@
     }
   },
   "devDependencies": {
-    "bit-docs": "0.0.7",
+    "bit-docs": "0.1.0",
     "bit-docs-generate-readme": "0.0.10",
     "can-zone": "^1.0.0",
     "detect-cyclic-packages": "^1.1.0",
-    "semistandard": "^9.2.1",
-    "steal": "^1.0.6",
+    "semistandard": "^13.0.1",
+    "steal": "^2.2.1",
     "steal-qunit": "^1.0.0",
-    "steal-tools": "^1.0.1",
-    "testee": "^0.3.0"
+    "steal-tools": "^2.2.1",
+    "testee": "^0.9.0"
   }
 }
