@@ -2,8 +2,11 @@ module.exports = {
   data: {},
 
   getStore: function () {
-    var CanZone = window.CanZone || undefined;
-    return typeof CanZone === 'undefined' ? this.data : CanZone.current.data;
+    if (window.doneSsr) {
+      var CanZone = window.CanZone || undefined;
+      return typeof CanZone === 'undefined' ? this.data : CanZone.current.data;
+    }
+    return this.data;
   },
 
   setItem: function (prop, value) {
